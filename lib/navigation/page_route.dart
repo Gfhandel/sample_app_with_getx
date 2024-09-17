@@ -25,7 +25,7 @@ class AppPages {
         ),
         GetPage(
           name: RouteConstant.signUp,
-          page: () => const LoginScreen(),
+          page: () => const SignUpScreen(),
           binding: AuthBinding(),
           transition: Transition.cupertino,
         ),

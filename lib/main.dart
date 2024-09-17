@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sample_app_with_getx/helpers/pref.dart';
 import 'package:sample_app_with_getx/modules/splash/index.dart';
 import 'package:sample_app_with_getx/navigation/page_route.dart';
 import 'package:sample_app_with_getx/theme/theme.dart';
 
-void main() {
+Future<void> main() async {
+  // init hive
+  await Pref.initializeHive();
+
   runApp(const MyApp());
 }
 
